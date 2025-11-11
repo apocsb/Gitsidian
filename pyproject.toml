@@ -1,0 +1,19 @@
+[project]
+name = "gitsidian"
+version = "0.8.1"
+description = "Export git commit history to Obsidian Markdown notes"
+authors = [{name = "Blieck Sonny"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+# If installed with pip, enables `gitsidian` command
+gitsidian = "gitsidian:main"
+
+[tool.setuptools]
+py-modules = ["gitsidian"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
